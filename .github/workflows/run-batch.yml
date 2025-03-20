@@ -1,3 +1,19 @@
-- name: Run Notepad using PowerShell
-  run: Start-Process notepad.exe
-  shell: pwsh
+name: Run Notepad Batch File
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Memungkinkan untuk dijalankan secara manual
+
+jobs:
+  run-batch:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run Notepad Batch
+        run: .\notepad.bat
+        shell: cmd
