@@ -1,7 +1,3 @@
-- name: Run Notepad Batch
-  run: start notepad.exe
-  shell: cmd
-
-- name: Check Running Processes
-  run: tasklist | findstr notepad
-  shell: cmd
+- name: Run Notepad using PowerShell
+  run: Start-Process notepad.exe
+  shell: pwsh
