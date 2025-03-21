@@ -10,3 +10,6 @@ jobs:
       - name: Save RDP Credentials
         run: |
           cmdkey /generic:172.16.14.130 /user:Administrator /pass:"Password1234"
+
+      - name: Open Notepad
+        run: notepad.exe
