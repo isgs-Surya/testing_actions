@@ -9,5 +9,4 @@ jobs:
     steps:
       - name: Save RDP Credentials
         run: |
-        runas /user:Administrator "cmdkey /generic:172.16.14.130 /user:Administrator /pass:Password1234"
-
+          cmdkey /generic:172.16.14.130 /user:Administrator /pass:"Password1234"
