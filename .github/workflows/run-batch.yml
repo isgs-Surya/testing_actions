@@ -1,3 +1,17 @@
+# name: RDP Login
+
+# on: workflow_dispatch
+
+# jobs:
+#   rdp:
+#     runs-on: self-hosted
+
+#     steps:
+    
+#       - name: Open Notepad
+#         shell: powershell
+#         run: Start-Process notepad.exe -WindowStyle Normal
+
 name: RDP Login
 
 on: workflow_dispatch
@@ -7,8 +21,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    
-      - name: Open Notepad
-        shell: powershell
-        run: Start-Process notepad.exe -WindowStyle Normal
-
+      - name: Execute Notepad Batch File
+        shell: cmd
+        run: C:\Users\ISGS-SURYA\Documents\notepad.bat
