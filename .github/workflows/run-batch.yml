@@ -1,19 +1,17 @@
-name: Run Notepad Batch File
+name: SSH Whoami
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch: # Memungkinkan untuk dijalankan secara manual
+on: push
 
 jobs:
-  run-batch:
-    runs-on: windows-latest
+  ssh:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Run Notepad Batch
-        run: .\notepad.bat
-        shell: cmd
+      - name: Execute remote SSH command
+        uses: appleboy/ssh-action@v1
+        with:
+          host: 172.16.14.132
+          username: root
+          password: P@ssw0rd
+          port: 22
+          script: whoami
