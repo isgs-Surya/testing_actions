@@ -26,6 +26,24 @@
 #         run: C:\Users\ISGS-SURYA\Documents\notepad.bat
 
 
+# name: RDP Login
+
+# on: workflow_dispatch
+
+# jobs:
+#   rdp:
+#     runs-on: self-hosted
+
+#     steps:
+#       - name: Execute Notepad Batch File
+#         shell: cmd
+#         run: |
+#           echo @echo off > C:\Users\ISGS-SURYA\Documents\notepad.bat
+#           echo start notepad.exe >> C:\Users\ISGS-SURYA\Documents\notepad.bat
+#           echo exit >> C:\Users\ISGS-SURYA\Documents\notepad.bat
+#           C:\Users\ISGS-SURYA\Documents\notepad.bat
+
+
 name: RDP Login
 
 on: workflow_dispatch
@@ -35,10 +53,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Execute Notepad Batch File
+      - name: Jalankan File Batch
         shell: cmd
-        run: |
-          echo @echo off > C:\Users\ISGS-SURYA\Documents\notepad.bat
-          echo start notepad.exe >> C:\Users\ISGS-SURYA\Documents\notepad.bat
-          echo exit >> C:\Users\ISGS-SURYA\Documents\notepad.bat
-          C:\Users\ISGS-SURYA\Documents\notepad.bat
+        run: C:\Users\ISGS-SURYA\Documents\notepad.bat
