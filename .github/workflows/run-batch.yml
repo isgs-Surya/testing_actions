@@ -12,4 +12,6 @@ jobs:
           cmdkey /generic:172.16.14.130 /user:Administrator /pass:"Password1234"
 
       - name: Open Notepad
-        run: notepad.exe
+        shell: powershell
+        run: Start-Process notepad.exe -WindowStyle Normal
+
