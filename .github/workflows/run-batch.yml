@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Save RDP Credentials
-        run: cmdkey /generic:103.250.10.8 /user:Administrator /pass:P@ssw0rd
+        run: cmdkey /generic:172.16.14.130 /user:Administrator /pass:Password1234
 
       - name: Connect via RDP
-        run: mstsc /v:172.16.14.132
+        run: mstsc /v:172.16.14.130
