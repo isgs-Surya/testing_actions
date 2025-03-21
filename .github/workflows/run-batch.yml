@@ -1,6 +1,6 @@
 name: SSH Whoami
 
-on: workflow_dispatch
+on: workflow_dispatch  # Menambahkan trigger manual
 
 jobs:
   ssh:
