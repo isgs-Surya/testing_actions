@@ -1,5 +1,7 @@
 name: SSH Whoami
 
+on: workflow_dispatch
+
 jobs:
   ssh:
     runs-on: ubuntu-latest
