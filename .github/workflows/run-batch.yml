@@ -1,7 +1,5 @@
 name: SSH Whoami
 
-on: push
-
 jobs:
   ssh:
     runs-on: ubuntu-latest
