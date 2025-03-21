@@ -1,17 +1,14 @@
-name: SSH Whoami
+name: RDP Login
 
-on: workflow_dispatch  # Menambahkan trigger manual
+on: workflow_dispatch
 
 jobs:
-  ssh:
-    runs-on: ubuntu-latest
+  rdp:
+    runs-on: self-hosted
 
     steps:
-      - name: Execute remote SSH command
-        uses: appleboy/ssh-action@v1
-        with:
-          host: 172.16.14.132
-          username: root
-          password: Password1234
-          port: 22
-          script: whoami
+      - name: Save RDP Credentials
+        run: cmdkey /generic:103.250.10.8 /user:Administrator /pass:P@ssw0rd
+
+      - name: Connect via RDP
+        run: mstsc /v:172.16.14.132
