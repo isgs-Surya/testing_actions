@@ -12,6 +12,6 @@ jobs:
         with:
           host: 172.16.14.132
           username: root
-          password: P@ssw0rd
+          password: Password1234
           port: 22
           script: whoami
