@@ -7,10 +7,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Save RDP Credentials
-        run: |
-          cmdkey /generic:172.16.14.130 /user:Administrator /pass:"Password1234"
-
+    
       - name: Open Notepad
         shell: powershell
         run: Start-Process notepad.exe -WindowStyle Normal
