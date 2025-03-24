@@ -56,8 +56,8 @@ jobs:
       - name: Jalankan File Batch
         shell: cmd
         # run: C:\Users\ISGS-SURYA\Documents\notepad.bat
-        # run: C:\Windows\System32\PsExec64.exe -accepteula -i 2 -s notepad.exe
-        run: C:\Windows\System32\PsExec64.exe -accepteula -i 2 -s -h C:\Users\ISGS-SURYA\Documents\notepad.bat
+        run: C:\Windows\System32\PsExec64.exe -accepteula -i 2 -s notepad.exe
+        # run: C:\Windows\System32\PsExec64.exe -accepteula -i 2 -s -h C:\Users\ISGS-SURYA\Documents\notepad.bat
         # run: C:\Windows\System32\PsExec64.exe -accepteula -i 1 -s C:\Temp\notepad.bat
         # run: C:\Windows\System32\PsExec64.exe -accepteula -i 1 -s -c C:\Temp\notepad.bat
         # "C:\Users\ISGS-SURYA\Documents\notepad.bat"
