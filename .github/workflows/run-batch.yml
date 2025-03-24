@@ -57,6 +57,8 @@ jobs:
         shell: cmd
         # run: C:\Users\ISGS-SURYA\Documents\notepad.bat
         # run: C:\Windows\System32\PsExec64.exe -accepteula -i 2 -s notepad.exe
-        run: C:\Windows\System32\PsExec64.exe -accepteula -i 1 -s -h C:\Users\ISGS-SURYA\Documents\notepad.bat
+        # run: C:\Windows\System32\PsExec64.exe -accepteula -i 1 -s -h C:\Users\ISGS-SURYA\Documents\notepad.bat
+        run: C:\Windows\System32\PsExec64.exe -accepteula -i 1 -s -h "C:\Users\ISGS-SURYA\Documents\notepad.bat"
+
 
 
